@@ -1,0 +1,197 @@
+
+import math
+dir(math)
+
+
+# from decimal import Decimal 
+# a = Decimal(2.37451812)
+print(pow(a, 2))
+print(pow(a, 3))
+print(math.sqrt(a))
+
+
+# 10-задание 
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+
+print((num1 * num2) % num3)
+
+# теорима Пифагора :
+
+import math
+dir(math)
+
+leg_a = 2
+leg_b = 3
+
+hypotenuse = (pow(leg_a,2) + pow(leg_b, 2))
+print(math.sqrt(hypotenuse))
+
+ # так же можно излечь корень - **
+
+num_1 = '225' # '225' -> 225
+num_2 = 5
+print(int(num_1)%5)
+
+temp = 231.4
+print(5/9 * (temp - 32))
+
+'========строки таски'
+# 13
+name = input('Nill')
+last_name = input('Onill')
+age = input('ten')
+city = input('Kanzasss')
+print(f'Вас зовут {name} {last_name}, Ваш возраст: {age}, Вы проживаете в городе {city}' )
+
+
+string = 'abracadabra'
+print(string[0:5]+'K'+string[6:-1]+string[-1])
+# 26^
+string = "cow loves good milk"
+print(string.replace('o', 'e', 2 ) ) 
+
+
+
+
+string1 = 'America'
+string2 = 'Japan'
+print((string1[:1] + string2[:1] + string1[int(len(string1)/2)]) + string2[int(len(string2)/2)] + string1[-1] + string2[-1])
+
+
+
+string = '             Как прекрасен этот мир          '
+str = string.strip(' ')
+len = len(str) - выводит кол.во символов без пробела
+print(str, len)
+
+'=======log op===='
+
+string = str(input())
+m = 'True' if len(string) > 5 else 'False'
+print(m)
+
+
+# №7
+
+x = 12
+y = 4
+z = 8
+
+if x == y and y == z and x == z:
+    print('3')
+elif x == y or y == z or x == z:
+    print('2')
+else :
+    print('0')
+
+
+# №8
+
+x = int(input(675))
+y = int(input(23))
+if x % y == 0: 
+    print('x делится на y') 
+    d = x//y
+    print(f'Частное: {d}') 
+else : 
+    print('x не делится на y') 
+    a = x // y 
+    print(f'Частное: {a}') 
+    b = x % y 
+    print(f'Остаток: {b}')
+
+
+# №18
+num = int(input())
+if num > 12 :
+    print("Такого месяца нет")
+elif num <=12 and num == 12 or num == 1 or num == 2:
+    print("зима")
+elif num <= 12 and num == 3 or num == 4 or num ==5 :
+    print("весна")
+elif num <= 12 and num == 6 or num == 7 or num == 8 :
+    print("лето")
+elif num <= 12 and num == 9 or num == 10 or num == 11 :
+    print("осень")
+
+
+year = int(input())
+if year % 4 == 0 and year % 100 != 0 :
+    print('YES')
+else :
+    print('NO')
+
+    # count = 0
+# number = int(input(5))
+# if number == int :
+#     count.replace(number(5))
+# print(count)
+
+
+#24 - log.exp
+x1 =int(input()) 
+y1 =int(input()) 
+x2 =int(input()) 
+y2 =int(input()) 
+if x1 == x2 and not y1 == y2: 
+    print('YES') 
+elif y1 == y2 and not x1 == x2: 
+    print('YES') 
+else: 
+    print('NO')
+
+    # 21 - log.exp
+    a1, b1, c1 = int(input()), int(input()), int(input()) 
+c = max(a1, b1, c1) 
+b = min(a1, b1, c1) 
+a = sum([a1, b1, c1]) - min(a1, b1, c1) - max(a1, b1, c1) 
+if c >= a + b: 
+    print('impossible') 
+elif c**2 == a**2 + b**2: 
+    print('rectangular') 
+elif c**2 < a**2 + b**2: 
+    print('acute') 
+elif c**2 > a**2 + b**2: 
+    print('obtuse')
+
+    # 22 log.exp
+    n = int(input("Enter number below 100: ")) 
+print('На лугу пасется ',end='' ) 
+if (n>100): 
+    print("Incorrect number") 
+elif((n>10 and n<20) or (n%10 >= 5) or (n%10==0)): 
+    print(n,"коров") 
+elif(n%10==1 ): 
+    print(n,"корова") 
+elif(n%10 in range(2,5)): 
+    print(n,"коровы")
+
+
+'====ЦИКЛЫ==='
+
+list1 = [11, 23, 45, 7, 9] 
+list2 = [21, 4, 16, 8, 10] 
+list3 = sum(list1 + list2) 
+print(list3)
+
+#15
+list_ = []
+for i in range(54, 9184):
+    if i % 5 == 0:
+        list_.append(i)
+print(list_)
+
+
+
+'ЦИКЛ FOR'
+
+name_of_list = ['1234567'] 
+new_list = name_of_list[0] 
+i = len(new_list) 
+if i%2==0: 
+    new_list = name_of_list[0][i//2:] + name_of_list[0][:i//2] 
+else: new_list = name_of_list[0][i//2+1:] + name_of_list[0][:i//2+1] 
+print(list(new_list))
+
